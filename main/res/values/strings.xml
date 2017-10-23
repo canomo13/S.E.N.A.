@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">SENA</string>
+    <string name="botonempezar">Empezar</string>
+    <string name="texto_ventana_esc">Por favor escanea el código de barras para empezar</string>
+    <string name="esc">Escanear</string>
+    <string name="Subnombre">Semáforo Nutricional Alimenticio</string>
+    <string name="NombreAPP">SENA</string>
+    <string name="use_flash">Usar flash</string>
+    <string name="auto_focus">Auto enfoque</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">El acceso a la cámara es necesario para la lectura del código de barras</string>
+    <string name="no_camera_permission">Esta aplicación no puede funcionar porque no tiene permiso para utilizar la cámara</string>
+    <string name="low_storage_error">Las dependencias para la detección no pueden ser descargadas debido a falta de espacio</string>
+    <string name="title_activity_main">Lectura Codigo de Barras</string>
+    <string name="barcode_header">Haga click en &quot;Leer Código de barras&quot; para leer el código de barras</string>
+    <string name="read_barcode">Leer Código de barras</string>
+    <string name="barcode_success">Código de barras leído con éxito</string>
+    <string name="barcode_failure">El código de barras no ha podido ser leído</string>
+    <string name="barcode_error">"Error al leer el código de barras : %1$s"</string>
+    <string name="cambioboton">Leer valores</string>
+    <string name="comprobar_codbarras">Estamos buscando el código de barras en nuestra base de datos</string>
+    <string name="ocr_success">Valores leídos correctamente</string>
+    <string name="ocr_failure">Valores no leídos correctamente</string>
+    <string name="ocr_error">"Error leyendo los valores: %1$s"</string>
+    <string name="ocr_header">Presiona el botón para detectar el texto</string>
+    <string name="read_text">Escanear valores </string>
+    <string name="Buscar">Buscar Código</string>
+    <string name="Volver">Volver</string>
+    <string name="Texto_no">Introducir valores manualmente</string>
+    <string name="Codigo_not_found">El producto no se encuentra en nuestra base de datos. Escanee los valores nutricionales para añadir el nuevo producto</string>
+
+
+    <string name="boton_registro">Registrarse</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+
+    <!-- Sign-in status messages -->
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="signed_in">Signed in</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="signed_out">Signed out</string>
+    <string name="signed_in_err">"Error: please check logs."</string>
+    <string name="error_null_person">
+        Error: Plus.PeopleApi.getCurrentPerson returned null. Ensure that the Google+ API is
+        enabled for your project, you have a properly configured google-services.json file
+        and that your device has an internet connection.
+    </string>
+    <string name="loading">Loading…</string>
+    <string name="auth_code_fmt">Auth Code: %s</string>
+    <string name="id_token_fmt">ID Token: %s</string>
+
+    <!-- String de Facebook -->
+    <string name="reg_facebook">Regístrate con Facebook</string>
+    <string name="facebook_app_id">1419237698166423</string>
+    <string name="fb_login_protocol_scheme">fb1419237698166423</string>
+
+    <!-- Strings de Gestion de Productos -->
+    <string name="kcalorias">kCalorias:</string>
+    <string name="azucar">Azúcar:</string>
+    <string name="carbohidratos">Hidratos de Carbono:</string>
+    <string name="proteinas">Proteinas:</string>
+    <string name="codigo_de_barras">Código de Barras:</string>
+    <string name="grasas_saturadas">Grasas Saturadas:</string>
+    <string name="grasas">Grasas:</string>
+    <string name="nombre_del_producto">Nombre del Producto:</string>
+    <string name="sal">Sal:</string>
+    <string name="Registrar_Producto">Registrar Producto</string>
+    <string name="Actualizar_Producto">Actualizar Producto</string>
+
+
+    <!-- Strings del semáforo -->
+    <string name="kcalorias_semaforo">kCalorias: </string>
+    <string name="azucar_semaforo">De los cuales azúcares: </string>
+    <string name="carbohidratos_semaforo">Hidratos de Carbono: </string>
+    <string name="proteinas_semaforo">Proteinas: </string>
+    <string name="codigo_de_barras_semaforo">Código de Barras: </string>
+    <string name="grasas_saturadas_semaforo">Grasas Saturadas: </string>
+    <string name="grasas_semaforo">Grasas: </string>
+    <string name="nombre_del_producto_semaforo">Nombre del Producto: </string>
+    <string name="sal_semaforo">Sal: </string>
+
+
+</resources>

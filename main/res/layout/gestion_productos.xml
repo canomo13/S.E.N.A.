@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/traporojo"
+    android:id="@+id/principal"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/actualizar_prod"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="@string/Actualizar_Producto"
+        android:textColor="#fee99a"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/barcode"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#fee99a"
+        android:layout_below="@+id/sal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Nombre_Prod"
+        android:text="@string/nombre_del_producto"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#fee99a"
+        android:layout_alignParentTop="true"
+        android:layout_alignBaseline="@+id/ETnombre"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/ETnombre"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kcal"
+        android:text="@string/kcalorias"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#fee99a"
+        android:layout_below="@+id/Nombre_Prod"
+        android:layout_alignBottom="@+id/ETkcal"
+        android:layout_alignBaseline="@+id/ETkcal"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/proteinas"
+        android:text="@string/proteinas"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#fee99a"
+        android:layout_alignBottom="@+id/ETProteinas"
+        android:layout_alignBaseline="@+id/ETProteinas"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sat"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/grasas_saturadas"
+        android:textColor="#fee99a"
+        android:layout_below="@+id/ETgrasas"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carbo"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/carbohidratos"
+        android:textColor="#fee99a"
+        android:layout_below="@+id/ETsat"
+        android:layout_alignParentStart="true"
+        android:layout_toEndOf="@+id/barcode" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/azucar"
+        android:text="@string/azucar"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#fee99a"
+        android:layout_alignBaseline="@+id/ETazucar"
+        android:layout_alignBottom="@+id/ETazucar"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grasas"
+        android:textColor="#fee99a"
+        android:text="@string/grasas"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/ETProteinas"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sal"
+        android:textColor="#fee99a"
+        android:textStyle="bold"
+        android:text="@string/sal"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/ETsal"
+        android:layout_alignBottom="@+id/ETsal"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:id="@+id/registrar_producto"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Registrar_Producto"
+        android:textColor="#fee99a"
+         android:textSize="20sp" 
+        android:textStyle="bold"
+        android:layout_above="@+id/actualizar_prod"
+        android:layout_alignParentStart="true" />
+
+    <!-- Edit Text -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETnombre"
+        android:inputType="text"
+        android:layout_toEndOf="@+id/Nombre_Prod"
+         android:textSize="20sp" 
+        android:textColor="#FFFFFF"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETkcal"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/Nombre_Prod"
+        android:layout_toEndOf="@+id/kcal"
+        tools:ignore="LabelFor"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETProteinas"
+        android:inputType="numberDecimal"
+        android:layout_toEndOf="@+id/proteinas"
+        android:layout_below="@+id/kcal"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETsat"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        tools:ignore="LabelFor"
+        android:layout_toEndOf="@+id/sat"
+        android:layout_alignBaseline="@+id/sat"
+        android:layout_below="@+id/grasas"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETgrasas"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        tools:ignore="LabelFor"
+        android:layout_toEndOf="@+id/grasas"
+        android:layout_alignBaseline="@+id/grasas"
+        android:layout_below="@+id/proteinas"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETazucar"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/carbo"
+        android:layout_toEndOf="@+id/azucar"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETsal"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        tools:ignore="LabelFor"
+        android:layout_below="@+id/azucar"
+        android:layout_toEndOf="@+id/sal" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETcarbo"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        tools:ignore="LabelFor"
+        android:layout_below="@+id/sat"
+        android:layout_toEndOf="@+id/carbo"
+        android:layout_alignBaseline="@+id/carbo"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/traporojo"
+    android:id="@+id/principal"
+    tools:context=".busquedaBBDD.busquedaBBDD">
+
+
+    <Button
+        android:id="@+id/actualizar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:onClick=""
+        android:text="Actualizar"
+        android:textColor="#fee99a"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/kcal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombreprod2"
+        android:text="@string/kcalorias_semaforo"
+        android:textSize="25sp"
+        android:textColor="#fee99a" />
+
+    <TextView
+        android:id="@+id/azucar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carbo3"
+        android:text="@string/azucar_semaforo"
+        android:textSize="25sp"
+        android:textColor="#fee99a"        />
+
+    <TextView
+        android:id="@+id/sal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sal_semaforo"
+        android:layout_below="@+id/proteinas3"
+        android:textSize="25sp"
+        android:textColor="#fee99a"
+        />
+
+    <TextView
+        android:id="@+id/proteinas3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kcal3"
+        android:text="@string/proteinas_semaforo"
+        android:textSize="25sp"
+        android:textColor="#fee99a"
+    />
+
+    <TextView
+        android:id="@+id/carbo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carbohidratos_semaforo"
+        android:layout_below="@+id/sal3"
+        android:textSize="25sp"
+        android:textColor="#fee99a"
+        />
+
+    <TextView
+        android:id="@+id/grasas3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grasas_semaforo"
+        android:layout_below="@+id/azucar3"
+        android:textSize="25sp"
+        android:textColor="#fee99a"
+    />
+
+    <TextView
+        android:id="@+id/sat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grasas_saturadas_semaforo"
+        android:textSize="25sp"
+        android:textColor="#fee99a"
+        android:layout_below="@+id/grasas3"
+         />
+
+    <TextView
+        android:id="@+id/nombreprod2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="43dp"
+         />
+
+    <TextView
+        android:id="@+id/sal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/sal3"
+        android:layout_toEndOf="@+id/sal3"
+        />
+
+    <TextView
+        android:id="@+id/azucar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/azucar3"
+        android:layout_toEndOf="@+id/azucar3"
+        />
+
+    <TextView
+        android:id="@+id/kcal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/kcal3"
+        android:layout_toEndOf="@+id/kcal3"
+        />
+
+    <TextView
+        android:id="@+id/proteinas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/proteinas3"
+        android:layout_toEndOf="@id/proteinas3"
+        />
+
+    <TextView
+        android:id="@+id/carbo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/carbo3"
+        android:layout_toEndOf="@+id/carbo3"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/grasas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/grasas3"
+        android:layout_toEndOf="@id/grasas3"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/sat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sat3"
+        android:layout_toEndOf="@+id/sat3"
+        android:textSize="25sp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="@string/Volver"
+        android:id="@+id/volver_sem"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:onClick=""
+        android:textColor="#fee99a"
+        android:layout_above="@+id/actualizar"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

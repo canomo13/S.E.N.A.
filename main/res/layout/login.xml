@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/principal"
+    android:background="@drawable/traporojo"
+    android:fontFamily="casual"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NombreAPP"
+        android:id="@+id/NombreAPP"
+        android:textSize="38pt"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxVUserLogin"
+        android:text="Nombre de Usuario: "
+        android:textColor="#fee99a"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/NombreAPP"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxVPassLogin"
+        android:text="Contraseña: "
+        android:textColor="#fee99a"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/TxVUserLogin"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp" />
+
+    <EditText
+        android:id="@+id/txtUserNameLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/TxVUserLogin"
+        android:textColor="#FFFFFF"
+        />
+
+    <EditText
+        android:id="@+id/txtPassLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/TxVPassLogin"
+        />
+    <Button
+        android:id="@+id/boton_registro"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Registrarse"
+        android:textColor="#fee99a"
+        android:onClick=""
+        android:layout_below="@+id/boton_login"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/boton_login"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Login"
+        android:textColor="#fee99a"
+        android:layout_below="@+id/txtPassLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/Mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textColor="#fee99a"
+        android:layout_toEndOf="@+id/txtPassLogin"
+        />
+
+</RelativeLayout>

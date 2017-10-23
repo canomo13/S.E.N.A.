@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/traporojo"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Nombre_Prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:text="@string/nombre_del_producto"
+        android:textColor="#fee99a"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETnombre"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/Nombre_Prod"
+        tools:ignore="LabelFor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/registro_prod"
+        android:layout_below="@+id/ETnombre"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="179dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/rootview">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registro_prod"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Registrar_Producto"
+        android:textColor="#fee99a"
+        android:textStyle="bold"
+        android:layout_above="@+id/texto_no"
+        android:layout_alignStart="@+id/volver_ocr"/>
+
+    <Button
+        android:id="@+id/texto_no"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/Texto_no"
+        android:textColor="#fee99a"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/volver_ocr"/>
+
+    <Button
+        android:id="@+id/volver_ocr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#fee99a"
+        android:textStyle="bold"
+        android:text="@string/Volver"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>

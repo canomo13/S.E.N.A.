@@ -1,0 +1,15 @@
+{
+  "CDR": [
+    {
+      "kCalorias": "2000",
+      "Carbohidratos": "300",
+      "Grasas": "65",
+      "Proteinas": "300",
+      "Grasas Saturadas": "20",
+      "Azucar": "25",
+      "Sal": "5",
+      "Nombre":"CDR",
+      "Codigo":"0000000000000"
+    }
+  ]
+}
